@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+/* HEADER */
+
+header {
+    background-color: #CBCCCF;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    height: 70px;
+    margin: 0 50px;
+    transition: all 0.5s;
+}
+
+.logo:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.carrito-header {
+    height: 2rem;
+    margin: 0 2rem;
+    transition: all 0.5s;
+}
+
+.carrito-header:hover {
+    transform: scale(1.2, 1.2);
+}
+
+/* MAIN */
+h1 {
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    color: #565B6B;
+}
+
+.contenedor-principal {
+    padding: 0 3rem;
+}
+
+h2 {
+    font-weight: 400;
+    font-style: normal;
+    color: #565B6B;
+    margin: 1.5rem 0;
+}
+
+.form-iniciar-sesion {
+    display: flex;
+    align-items: center;
+    border: #EA5153 2px solid;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+label {
+    color: #565B6B;
+    font-weight: 500;
+}
+
+input {
+
+    border: #565B6B 1px solid;
+    border-radius: 1rem;
+    padding: 0.1rem 0.3rem;
+    margin: 0 1rem;
+}
+
+.btn-iniciar-sesion {
+    background-color: #565B6B;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.2rem 0.5rem;
+    transition: all 0.4s;
+}
+
+.btn-iniciar-sesion:hover {
+    background-color: #EA5153;
+    transform: scale(1.06, 1.06);
+}
+
+.cursos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.curso {
+    background-color: white;
+    padding: 1rem;
+    border: 2px solid #565B6B;
+    border-radius: 1rem;
+    color: var(--clr-white);
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+}
+
+.curso-img {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+}
+
+.curso h3 {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #EA5153;
+}
+
+.curso p {
+    font-weight: 300;
+    color: #565B6B;
+    margin: 0;
+}
+
+.curso-btn {
+    background-color: #565B6B;
+    color: white;
+    margin: 10px 20px 0 20px;
+    height: auto;
+    border: none;
+    border-radius: 1rem;
+    font-weight: bold;
+    transition: all 0.4s;
+}
+
+.curso-btn:hover {
+    background-color: #EA5153;
+    color: white;
+    transform: scale(1.06, 1.06);
+}
+
+.carrito {
+    padding: 1rem 2rem;
+    margin-bottom: 4rem;
+    border: #EA5153 solid 2px;
+    border-radius: 2rem;
+}
+
+.main-carrito {
+    min-height: 100vh;
+}
+
+.carrito,
+div {
+    color: #565B6B;
+}
+
+.carrito-vacio {
+    display: flex;
+    align-items: center;
+}
+
+.carrito-cursos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.curso-carrito {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #CBCCCF;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    color: #565B6B;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.carrito-texto {
+    margin: 0;
+}
+
+.img-carrito {
+    height: 3rem;
+    border-radius: 0.5rem;
+}
+
+.btn-carrito {
+    color: #565B6B;
+    background-color: transparent;
+    border: none;
+    padding-right: 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.finalizar-compra {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.total-carrito {
+    margin: 1rem 0;
+}
+
+.btn-finalizar-compra {
+    background-color: #565B6B;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 3rem;
+    font-weight: bold;
+    transition: all 0.4s;
+}
+
+.btn-finalizar-compra:hover {
+    background-color: #EA5153;
+    transform: scale(1.06, 1.06);
+    cursor: pointer;
+}
+
+.display-none {
+    display: none;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    background-color: #CBCCCF;
+    padding-bottom: 0px;
+}
+
+footer ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 10px;
+    transition: all 0.6s;
+}
+
+footer ul li i {
+    color: #565B6B;
+}
+
+footer ul li:hover {
+    transform: scale(1.15, 1.15);
+}
+
+.atribucion {
+    font-size: x-small;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 1rem;
+}
