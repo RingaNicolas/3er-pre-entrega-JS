@@ -56,7 +56,6 @@ function crearCarrito() {
             `;
 
             const botonSacar = document.createElement("buttom");
-            botonSacar.setAttribute("id", "btn-sacar");
             botonSacar.classList.add("btn-carrito");
             botonSacar.innerText = "–";
             botonSacar.addEventListener("click", () => {
