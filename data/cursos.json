@@ -1,0 +1,50 @@
+[
+    {
+        "titulo": "Curso de liderazgo",
+        "precio": 35000,
+        "img": "./img/Curso liderazgo.png",
+        "modalidad": "presencial"
+    },
+    {
+        "titulo": "Curso de venta",
+        "precio": 45000,
+        "img": "./img/Curso ventas.png",
+        "modalidad": "presencial"
+    },
+    {
+        "titulo": "Curso de marketing",
+        "precio": 60000,
+        "img": "./img/Curso marketing.png",
+        "modalidad": "presencial"
+    },
+    {
+        "titulo": "Curso para redes",
+        "precio": 30000,
+        "img": "./img/Curso redes.png",
+        "modalidad": "presencial"
+    },
+    {
+        "titulo": "Curso de liderazgo",
+        "precio": 25000,
+        "img": "./img/Curso liderazgo Online.png",
+        "modalidad": "online"
+    },
+    {
+        "titulo": "Curso de venta",
+        "precio": 35000,
+        "img": "./img//Curso ventas Online.png",
+        "modalidad": "online"
+    },
+    {
+        "titulo": "Curso de marketing",
+        "precio": 50000,
+        "img": "./img/Curso marketing Online.png",
+        "modalidad": "online"
+    },
+    {
+        "titulo": "Curso para redes",
+        "precio": 20000,
+        "img": "./img/Curso redes Online.png",
+        "modalidad": "online"
+    }
+]

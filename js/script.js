@@ -1,62 +1,17 @@
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
-const cursos = [
-    {
-        titulo: "Curso de liderazgo",
-        precio: 35000,
-        img: "./img/Curso liderazgo.png",
-        modalidad: "presencial"
-    },
-    {
-        titulo: "Curso de venta",
-        precio: 45000,
-        img: "./img/Curso ventas.png",
-        modalidad: "presencial"
-    },
-    {
-        titulo: "Curso de marketing",
-        precio: 60000,
-        img: "./img/Curso marketing.png",
-        modalidad: "presencial"
-    },
-    {
-        titulo: "Curso para redes",
-        precio: 30000,
-        img: "./img/Curso redes.png",
-        modalidad: "presencial"
-    },
-    {
-        titulo: "Curso de liderazgo",
-        precio: 25000,
-        img: "./img/Curso liderazgo Online.png",
-        modalidad: "online"
-    },
-    {
-        titulo: "Curso de venta",
-        precio: 35000,
-        img: "./img//Curso ventas Online.png",
-        modalidad: "online"
-    },
-    {
-        titulo: "Curso de marketing",
-        precio: 50000,
-        img: "./img/Curso marketing Online.png",
-        modalidad: "online"
-    },
-    {
-        titulo: "Curso para redes",
-        precio: 20000,
-        img: "./img/Curso redes Online.png",
-        modalidad: "online"
-    },
-]
+fetch("/data/cursos.json")
+    .then(res => res.json())
+    .then(data => mostrarCursos(data));
 
 const contenedorCursos = document.querySelector("#cursos");
 const carritoVacio = document.querySelector("#carrito-vacio");
 const cursosEnCarrito = document.querySelector("#carrito-cursos");
 const carritoTotal = document.querySelector("#carrito-total");
 
-//Agrega los productos del array a la pantalla del navegador
+//Funcion que agrega los productos del archivo cursos.json a la pantalla del navegador
+const mostrarCursos = (cursos) => {
+
 cursos.forEach((curso) => {
     const div = document.createElement("div");
     div.classList.add("curso", "shadow");
@@ -76,6 +31,7 @@ cursos.forEach((curso) => {
 
     contenedorCursos.append(div);
 });
+}
 
 // Función para agregar los productos en el carrito y enviarlos a la página carrito.html
 function crearCarrito() {
@@ -100,6 +56,7 @@ function crearCarrito() {
             `;
 
             const botonSacar = document.createElement("buttom");
+            botonSacar.setAttribute("id", "btn-sacar");
             botonSacar.classList.add("btn-carrito");
             botonSacar.innerText = "–";
             botonSacar.addEventListener("click", () => {
@@ -161,7 +118,6 @@ function borrarCurso(curso) {
 function restarCurso(curso) {
     curso.cantidad === 1 ? borrarCurso(curso) : curso.cantidad--;
     crearCarrito();
-
 }
 
 function sumarCurso(curso) {
